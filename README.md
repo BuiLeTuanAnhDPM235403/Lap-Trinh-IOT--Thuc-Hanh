@@ -20,7 +20,7 @@
 ---
 
 ## 📚 Giới Thiệu
-Repository này lưu trữ mã nguồn và các file cấu hình mô phỏng cho chuỗi **8 bài tập thực hành số 3** môn Internet of Things (IoT). Toàn bộ các dự án đều được lập trình bằng C++ và chạy giả lập phần cứng trực tiếp trên nền tảng **Wokwi**.
+Repository này lưu trữ mã nguồn và các file cấu hình mô phỏng cho chuỗi các bài tập môn Internet of Things (IoT). Toàn bộ các dự án đều được lập trình bằng C++ và chạy giả lập phần cứng trực tiếp trên nền tảng **Wokwi**.
 
 ---
 
