@@ -28,12 +28,22 @@ Repository này lưu trữ mã nguồn và các file cấu hình mô phỏng cho
 Dựa vào danh sách bài tập, repo được tổ chức thành các thư mục bài làm riêng biệt để dễ dàng quản lý mã nguồn (`sketch.ino`) và sơ đồ mạch (`diagram.json`).
 
 ```text
-📦 IOT_BaiTapThucHanh_3
- ┣ 📂 BaiTapTH3.1_DPM235403_BuiLeTuanAnh
- ┣ 📂 BaiTapTH3.2_DPM235403_BuiLeTuanAnh
- ┣ 📂 BaiTapTH3.3_DPM235403_BuiLeTuanAnh
- ┣ 📂 BaiTapTH3.4_DPM235403_BuiLeTuanAnh
- ┣ 📂 BaiTapTH3.5_DPM235403_BuiLeTuanAnh
- ┣ 📂 BaiTapTH3.6_DPM235403_BuiLeTuanAnh
- ┣ 📂 BaiTapTH3.7_DPM235403_BuiLeTuanAnh
- ┗ 📂 BaiTapTH3.8_DPM235403_BuiLeTuanAnh
+📦 Lap-Trinh-IOT--Thuc-Hanh
+ ┣ 📂 IOT_BaiTapThucHanh_3
+ ┃ ┣ 📂 BaiTapTH3.1_DPM235403_BuiLeTuanAnh
+ ┃ ┣ 📂 BaiTapTH3.2_DPM235403_BuiLeTuanAnh
+ ┃ ┣ 📂 BaiTapTH3.3_DPM235403_BuiLeTuanAnh
+ ┃ ┣ 📂 BaiTapTH3.4_DPM235403_BuiLeTuanAnh
+ ┃ ┣ 📂 BaiTapTH3.5_DPM235403_BuiLeTuanAnh
+ ┃ ┣ 📂 BaiTapTH3.6_DPM235403_BuiLeTuanAnh
+ ┃ ┣ 📂 BaiTapTH3.7_DPM235403_BuiLeTuanAnh
+ ┃ ┗ 📂 BaiTapTH3.8_DPM235403_BuiLeTuanAnh
+ ┃
+ ┣ 📂 IOT Thuc Hanh Tuan 2
+ ┃ ┣ 📂 BaiTapTH4.1_DPM235403_BuiLeTuanAnh
+ ┃ ┣ 📂 BaiTapTH4.2_DPM235403_BuiLeTuanAnh
+ ┃ ┣ 📂 BaiTapTH4.3_DPM235403_BuiLeTuanAnh
+ ┃ ┣ 📂 BaiTapTH4.4_DPM235403_BuiLeTuanAnh
+ ┃ ┣ 📂 BaiTapTH4.5_DPM235403_BuiLeTuanAnh
+ ┃ ┣ 📂 BaiTapTH4.6_DPM235403_BuiLeTuanAnh
+ ┃ ┗ 📂 BaiTapTH4.7_DPM235403_BuiLeTuanAnh
