@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "author": "TRAN MINH TRUONG",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 300, "left": 100, "attrs": {} },
+    { "type": "wokwi-breadboard-half", "id": "bb1", "top": 300, "left": 450, "attrs": {} },
+    { "type": "wokwi-lcd1602", "id": "lcd1", "top": 50, "left": 450, "attrs": {} },
+    {
+      "type": "wokwi-relay-module",
+      "id": "rel1",
+      "top": 200,
+      "left": 800,
+      "attrs": { "transistor": "npn" }
+    },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": 290.4,
+      "left": 817.8,
+      "attrs": { "volume": "0.3" }
+    },
+    {
+      "type": "wokwi-gas-sensor",
+      "id": "mq2",
+      "top": 415.5,
+      "left": 813.4,
+      "attrs": { "ppm": "250", "threshold": "4.4" }
+    }
+  ],
+  "connections": [
+    [ "mq2:VCC", "bb1:bp.28", "red", [ "h-120", "v-70" ] ],
+    [ "mq2:GND", "bb1:bn.28", "black", [ "h-110", "v-60" ] ],
+    [ "uno:A0", "mq2:AOUT", "green", [ "v46.1", "h690.4", "v-96" ] ],
+    [ "bb1:tn.25", "bz1:1", "black", [ "h44", "v61.7" ] ],
+    [ "rel1:GND", "bb1:tn.22", "black", [ "h0" ] ],
+    [ "rel1:VCC", "bb1:tp.20", "red", [ "h0" ] ],
+    [ "uno:GND.2", "bb1:bn.1", "black", [ "v-11.5", "h172.1", "v16.3" ] ],
+    [ "uno:5V", "bb1:bp.2", "red", [ "v-21.1", "h233.6" ] ],
+    [ "bb1:7b.f", "bz1:2", "gold", [ "v-5.4", "h321.2" ] ],
+    [ "mq2:GND", "bb1:bn.25", "black", [ "h19.2", "v56.8" ] ],
+    [ "mq2:VCC", "bb1:bp.25", "red", [ "h0", "v18.3" ] ],
+    [ "uno:13", "bb1:6b.j", "cyan", [ "v113.4", "h159", "v34.2" ] ],
+    [ "lcd1:D7", "bb1:15t.a", "white", [ "v0" ] ],
+    [ "lcd1:D6", "bb1:14t.a", "blue", [ "v0" ] ],
+    [ "lcd1:D5", "bb1:13t.a", "#8f4814", [ "v0" ] ],
+    [ "bb1:15t.e", "uno:2", "white", [ "v-5.4", "h-236", "v-86.4", "h-37.9" ] ],
+    [ "uno:3", "bb1:14t.d", "blue", [ "v-21", "h57", "v86.4" ] ],
+    [ "uno:4", "bb1:13t.c", "#8f4814", [ "v-30.6", "h76.1", "v86.4" ] ],
+    [ "uno:5", "bb1:12t.b", "magenta", [ "v-40.2", "h95.2", "v86.4" ] ],
+    [ "lcd1:D4", "bb1:12t.a", "magenta", [ "v0" ] ],
+    [ "lcd1:A", "bb1:tp.13", "red", [ "v0" ] ],
+    [ "lcd1:K", "bb1:tn.14", "black", [ "v0" ] ],
+    [ "lcd1:E", "bb1:7t.a", "gray", [ "v0" ] ],
+    [ "uno:10", "bb1:7b.h", "gold", [ "v103.8", "h140.1", "v24.6" ] ],
+    [
+      "uno:11",
+      "bb1:7t.e",
+      "gray",
+      [ "v-11.4", "h34.4", "v105.6", "h124.8", "v19.2", "h115.2", "v-28.8", "h15.2" ]
+    ],
+    [ "lcd1:VSS", "bb1:tn.1", "black", [ "v0" ] ],
+    [ "lcd1:VDD", "bb1:tp.2", "red", [ "v0" ] ],
+    [ "lcd1:RW", "bb1:tn.5", "black", [ "v0" ] ],
+    [ "lcd1:V0", "bb1:tn.3", "black", [ "v0" ] ],
+    [ "lcd1:RS", "bb1:5t.a", "green", [ "v0" ] ],
+    [ "uno:12", "bb1:5t.e", "green", [ "v-21", "h53.5", "v101.4" ] ],
+    [ "bb1:6b.f", "bb1:28t.d", "cyan", [ "v-15", "h205.6" ] ],
+    [ "bb1:28t.b", "rel1:IN", "cyan", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}

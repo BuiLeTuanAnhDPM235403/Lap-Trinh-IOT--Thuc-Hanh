@@ -1,0 +1,21 @@
+{
+  "name": "LM35",
+  "author": "Maverick",
+  "pins": [
+    "VCC",
+    "OUT",
+    "GND",
+    "",
+    ""
+  ],
+  "controls": [
+    {
+      "id": "temperature",
+      "label": "Temperature",
+      "type": "range",
+      "min": 2,
+      "max": 150,
+      "step": 1
+    }
+  ]
+}
