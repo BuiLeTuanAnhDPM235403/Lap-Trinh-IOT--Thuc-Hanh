@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "author": "Student",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": -120, "attrs": {} },
+    { "type": "wokwi-breadboard-half", "id": "bb1", "top": -12.6, "left": 41.2, "attrs": {} },
+    { "type": "wokwi-led", "id": "led1", "top": -25, "left": 98, "attrs": { "color": "red" } },
+    { "type": "wokwi-resistor", "id": "r1", "top": 83, "left": 102, "attrs": { "value": "220" } },
+    { "type": "wokwi-lcd1602", "id": "lcd1", "top": -160, "left": 70, "attrs": { "pins": "i2c" } }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "esp:5V", "bb1:bp.1", "red", [ "v15", "h170" ] ],
+    [ "esp:GND.2", "bb1:tn.1", "black", [ "v-5", "h150" ] ],
+    [ "led1:C", "bb1:6t.a", "black", [] ],
+    [ "led1:A", "bb1:7t.a", "red", [] ],
+    [ "bb1:6t.b", "bb1:tn.6", "black", [] ],
+    [ "r1:1", "bb1:7t.d", "red", [ "v-11.85", "h21.6" ] ],
+    [ "r1:2", "bb1:11t.d", "red", [] ],
+    [ "bb1:11t.e", "esp:2", "orange", [ "h19.2", "v70", "h-201.64" ] ],
+    [ "lcd1:GND", "bb1:tn.3", "black", [ "h-20", "v70" ] ],
+    [ "lcd1:VCC", "bb1:bp.3", "red", [ "h-30", "v245" ] ],
+    [ "lcd1:SDA", "esp:21", "green", [ "h-110", "v145" ] ],
+    [ "lcd1:SCL", "esp:22", "yellow", [ "h-120", "v115" ] ]
+  ],
+  "dependencies": {}
+}

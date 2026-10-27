@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "author": "Bui Le Tuan Anh",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard", "id": "bb1", "top": 150.6, "left": -266, "attrs": {} },
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": -172.8,
+      "left": -110.36,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo1",
+      "top": -39.4,
+      "left": 97.8,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 76.9,
+      "left": -118.5,
+      "rotate": 270,
+      "attrs": { "color": "green", "xray": "1" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "esp:5V", "bb1:tp.9", "red", [ "h0" ] ],
+    [ "servo1:GND", "bb1:43t.b", "black", [ "v0" ] ],
+    [ "bb1:tn.35", "bb1:43t.a", "black", [ "v0" ] ],
+    [ "servo1:V+", "bb1:46t.b", "red", [ "v0" ] ],
+    [ "bb1:tp.37", "bb1:46t.a", "red", [ "v0" ] ],
+    [ "servo1:PWM", "bb1:48t.d", "gold", [ "v28.8", "h19.4" ] ],
+    [ "esp:18", "bb1:26t.d", "gold", [ "h0" ] ],
+    [ "bb1:26t.e", "bb1:48t.e", "gold", [ "v0" ] ],
+    [ "esp:GND.1", "bb1:tn.6", "black", [ "h0" ] ],
+    [ "esp:13", "bb1:10t.a", "green", [ "h0" ] ],
+    [ "btn1:2.l", "bb1:19t.b", "black", [ "v0" ] ],
+    [ "bb1:tn.15", "bb1:19t.a", "black", [ "v0" ] ],
+    [ "btn1:1.l", "bb1:16t.a", "green", [ "v0" ] ],
+    [ "bb1:10t.b", "bb1:16t.b", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
